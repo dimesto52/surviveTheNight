@@ -18,10 +18,11 @@ public class spawnMob : MonoBehaviour
     void Update()
     {
         timeElaps += Time.deltaTime;
-        if (timeElaps > 0.5/ cycle)
+        if (timeElaps > 0.75)
         {
-            timeElaps -= 1;
-            spawn();
+            timeElaps -= 0.75f;
+            for(int i = 0; i < cycle*0.5f;i++)
+                spawn();
         }
     }
     public void cucleAdd()

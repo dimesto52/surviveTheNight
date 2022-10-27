@@ -23,6 +23,9 @@ public class compteur : MonoBehaviour
     Vector2 baseSize = Vector2.zero;
     public float pulseAmont = 1.0f;
     public UnityEvent onCLockDown;
+    public UnityEvent onCLock3;
+    public UnityEvent onCLock2;
+    public UnityEvent onCLock1;
 
 
     // Start is called before the first frame update
@@ -40,6 +43,13 @@ public class compteur : MonoBehaviour
     {
         if (isOn)
         {
+            if (timeElaps < 7 && timeElaps + Time.deltaTime > 7)
+                onCLock3.Invoke();
+            if (timeElaps < 8 && timeElaps + Time.deltaTime > 8)
+                onCLock2.Invoke();
+            if (timeElaps < 9 && timeElaps + Time.deltaTime > 9)
+                onCLock1.Invoke();
+
             timeElaps += Time.deltaTime;
             if (timeElaps > 10)
             {

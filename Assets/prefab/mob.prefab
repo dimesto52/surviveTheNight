@@ -113,10 +113,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 540c3dc05bbc573488e482b32f93afa9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 3
+  life: 2
   prefabSoundMDeath: {fileID: 2352323749447483593, guid: 6a426446e13c8604284aae30461175af, type: 3}
   chanceDrop: 0.5
   drop: {fileID: 7213695413984777013, guid: e9390528451af5644ad94a4f54807b03, type: 3}
+  particul: {fileID: 5944008749351253500, guid: 33eb1c63881a2e14d92b6828469553f5, type: 3}
 --- !u!114 &692501929530460140
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -147,7 +148,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.32, y: 0.32}
+    oldSize: {x: 2, y: 2}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

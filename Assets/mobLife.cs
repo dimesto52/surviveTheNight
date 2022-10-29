@@ -9,6 +9,8 @@ public class mobLife : MonoBehaviour
     public GameObject prefabSoundMDeath;
     public float chanceDrop = 0.5f;
     public GameObject drop;
+
+    public GameObject particul;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +35,9 @@ public class mobLife : MonoBehaviour
             {
                 GameObject godrop = GameObject.Instantiate(drop);
                 godrop.transform.position = transform.position;
+
+                GameObject p = GameObject.Instantiate(particul);
+                p.transform.position = transform.position;
             }
 
 

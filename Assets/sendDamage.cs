@@ -33,7 +33,7 @@ public class sendDamage : MonoBehaviour
             float rot_z = Mathf.Atan2(targetY , targetX) * Mathf.Rad2Deg;
             pTouch.transform.rotation = Quaternion.Euler(-rot_z, 90f, -90);
 
-            Debug.Log(rot_z);
+            //Debug.Log(rot_z);
 
             GameObject sTouch = GameObject.Instantiate(soundTouch);
             sTouch.transform.position = collision.transform.position;
